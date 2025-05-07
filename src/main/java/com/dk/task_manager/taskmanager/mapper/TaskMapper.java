@@ -1,6 +1,8 @@
-package com.dk.task_manager.taskmanager;
+package com.dk.task_manager.taskmanager.mapper;
 
 
+import com.dk.task_manager.taskmanager.model.Task;
+import com.dk.task_manager.taskmanager.dto.TaskDTO;
 import org.springframework.stereotype.Component;
 
 @Component

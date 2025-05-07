@@ -1,4 +1,4 @@
-package com.dk.task_manager.taskmanager;
+package com.dk.task_manager.taskmanager.exception;
 
 
 import org.springframework.http.HttpStatus;

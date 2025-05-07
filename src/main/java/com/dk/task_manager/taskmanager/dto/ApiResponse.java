@@ -1,4 +1,4 @@
-package com.dk.task_manager.taskmanager;
+package com.dk.task_manager.taskmanager.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,12 +7,6 @@ import lombok.NoArgsConstructor;
 import java.time.Instant;
 
 /* 9. Generic Response DTO */
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.Instant;
 
 @Data
 @NoArgsConstructor
@@ -43,5 +37,9 @@ public class ApiResponse<T> {
 
     public static <T> ApiResponse<T> error(String message) {
         return new ApiResponse<>(false, message, null);
+    }
+
+    public static <T> ApiResponse<T> error(String message, T data) {
+        return new ApiResponse<>(false, message, data);
     }
 }

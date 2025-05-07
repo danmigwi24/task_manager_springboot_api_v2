@@ -1,6 +1,11 @@
-package com.dk.task_manager.taskmanager;
+package com.dk.task_manager.taskmanager.service;
 
 
+import com.dk.task_manager.taskmanager.dto.TaskDTO;
+import com.dk.task_manager.taskmanager.exception.ResourceNotFoundException;
+import com.dk.task_manager.taskmanager.mapper.TaskMapper;
+import com.dk.task_manager.taskmanager.model.Task;
+import com.dk.task_manager.taskmanager.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -63,4 +68,7 @@ public class TaskService {
         }
         taskRepository.deleteById(id);
     }
+
+
+
 }

@@ -1,7 +1,7 @@
-package com.dk.task_manager.taskmanager;
+package com.dk.task_manager.taskmanager.dto;
 
 
-import com.dk.task_manager.taskmanager.Task.TaskStatus;
+import com.dk.task_manager.taskmanager.model.Task.TaskStatus;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
